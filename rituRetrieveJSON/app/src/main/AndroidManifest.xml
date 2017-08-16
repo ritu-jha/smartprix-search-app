@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.Ritu.com.SmartPrix" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="app.Ritu.com.SmartPrix.VolleyImplementation.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/sm_small"
+        android:label="SmartPrix"
+        android:theme="@style/AppTheme"
+        android:windowActionBar="false">
+        <activity
+            android:name="app.Ritu.com.SmartPrix.MainActivity"
+            android:label="SmartPrix"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.Ritu.com.SmartPrix.ProductListing"
+            android:label="@string/title_activity_product_listing"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.Ritu.com.SmartPrix.ProductDetails"
+            android:label="@string/title_activity_product_details"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
